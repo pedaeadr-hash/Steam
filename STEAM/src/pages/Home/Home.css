@@ -1,0 +1,168 @@
+.HH {
+    overflow: hidden;
+    max-width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 70%;
+}
+
+.box {
+    width: 100%;
+    height: 11%;
+    background-color: black;
+}
+
+.content {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(32, 32, 32, 0);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    gap: 10vw;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(43, 43, 43, 0.048);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bolls {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+}
+
+.boll {
+    width: 5%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.active {
+    width: 7%;
+    height: 40%;
+}
+
+.left svg {
+    cursor: pointer;
+    height: 90%;
+}
+
+.left svg:hover {
+    transform: scale(1.06);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.right svg {
+    cursor: pointer;
+    height: 90%;
+}
+
+.right svg:hover {
+    transform: scale(1.06);
+}
+
+.viwe {
+    width: 100%;
+    height: 90%;
+    transition: transform 0.8s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 95%;
+    height: 99%;
+    background-color: rgba(137, 43, 226, 0);
+}
+
+.card video {
+    object-fit: cover;
+    height: 90%;
+    width: 100%;
+}
+
+.info {
+    padding: 15px;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.creat {
+    position: absolute;
+    right: 15px;
+    height: 95%;
+}
+
+
+
+@media (max-width: 798px) {
+
+
+    .info p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1298px) {}
