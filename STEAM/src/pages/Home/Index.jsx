@@ -4,7 +4,6 @@ import Logo from "../../assets/logo.png"
 import The from "../../assets/thelast.mp4"
 import Dog from "../../assets/Naughtydog.png"
 import Cherry from "../../assets/cherry.png"
-import Hollow from "../../assets/hollow.mp4"
 import Silent from "../../assets/silenthill.mp4"
 import Konami from "../../assets/konami.png"
 
@@ -73,7 +72,7 @@ function Home (){
                             </div>
                         </div>
                         <div className='card'>
-                            <video autoPlay muted loop playsInline src={Hollow}></video>
+                            <video autoPlay muted loop playsInline src={The}></video>
                             <div className='info'>
                                 <p>Hollow Knight</p>
                                 <img className='creat' src={Cherry} alt="" />
