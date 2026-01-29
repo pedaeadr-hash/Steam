@@ -1,14 +1,15 @@
 import './Home.css'
 import { useState, useRef } from 'react'
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/logol1.png"
 import The from "../../assets/thelast.mp4"
 import Dog from "../../assets/Naughtydog.png"
 import Cherry from "../../assets/cherry.png"
 import Silent from "../../assets/silenthill.mp4"
 import Konami from "../../assets/konami.png"
-
-
-
+import Hollow from "../../assets/hollow.mp4"
+import Thef from "../../assets/thelastf.jpg"
+import Blood from "../../assets/bloodborne.jpg"
+import DarkII from "../../assets/darksoulsII.jpg"
 
 
 function Home (){
@@ -72,7 +73,7 @@ function Home (){
                             </div>
                         </div>
                         <div className='card'>
-                            <video autoPlay muted loop playsInline src={The}></video>
+                            <video autoPlay muted loop playsInline src={Hollow}></video>
                             <div className='info'>
                                 <p>Hollow Knight</p>
                                 <img className='creat' src={Cherry} alt="" />
@@ -80,6 +81,36 @@ function Home (){
                         </div>
                         
                     </div>
+                </div>
+
+
+
+                <div className='conteineri'>
+                    <div className='in'>
+                        <img src={Thef} alt="" />
+                        <div className='infn'>
+                            <p>The last of us II</p>
+                            <button>Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div className='in'>
+                        <img src={Blood} alt="" />
+                        <div className='infn'>
+                            <p>Bloodborne</p>
+                            <button>Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div className='in'>
+                        <img src={DarkII} alt="" />
+                        <div className='infn'>
+                            <p>Dark souls II</p>
+                            <button>Ver mais</button>
+                        </div>
+                    </div>
+
+
                 </div>
         </div>
     )
