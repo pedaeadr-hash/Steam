@@ -71,7 +71,7 @@ function Home (){
                         <div className='card'>
                             <video autoPlay muted loop playsInline src={The}></video>
                             <div className='info'>
-                                <p>The last of us</p>
+                                <p>Cyperpunk 2077</p>
                                 <img className='creat' src={Dog} alt="" />
                             </div>
                         </div>

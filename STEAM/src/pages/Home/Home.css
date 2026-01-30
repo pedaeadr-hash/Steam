@@ -168,10 +168,11 @@ header img {
     margin: 0 auto;
     width: 75%;
     height: 70vh;
-    background-color: rgb(14, 14, 14);
+    background-color: rgba(14, 14, 14, 0);
 }
 
 .in {
+    border-radius: 2px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -246,7 +247,7 @@ header img {
 
     .conteineri {
         flex-direction: column;
-        width: 95%;
+        width: 85%;
         height: 180vh;
     }
 
