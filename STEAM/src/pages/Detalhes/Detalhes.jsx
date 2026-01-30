@@ -4,6 +4,7 @@ import Naughtdog from "../../assets/Naughtydog.png"
 import Steam from "../../assets/steam.png"
 import Play from "../../assets/playstation.png"
 import Fromsoft from "../../assets/fromsoftware.png"
+import Xbox from "../../assets/Xbox.png"
 
 function Detalhes () {
     const {slug}= useParams()
@@ -15,6 +16,7 @@ function Detalhes () {
             produtora: Naughtdog,
             plataformaPC: Steam,
             plataformaPL: Play,
+            plataformaXB: false,
         },
         Bloodborne : {
             title: "Bloodborne",
@@ -23,6 +25,16 @@ function Detalhes () {
             produtora: Fromsoft,
             plataformaPC: false,
             plataformaPL: Play,
+            plataformaXB: false,
+        },
+        Darksouls2 : {
+            title: "Dark souls II",
+            sinops: "Em um reino amaldiçoado e em ruínas, você desperta marcado pela maldição dos mortos-vivos. Ao enfrentar inimigos cruéis e explorar terras esquecidas, cada batalha testa sua persistência e força de vontade. Uma jornada sombria e desafiadora, onde perder tudo é parte do caminho.",
+            media: "https://www.youtube.com/embed/4IzXvLXbfzg?si=_KNxeJMGYqPyzTfp",
+            produtora: Fromsoft,
+            plataformaPC: Steam,
+            plataformaPL: Play,
+            plataformaXB: Xbox,
         }
     };
 
@@ -40,7 +52,7 @@ function Detalhes () {
                 </div>
                 <div className="jginf">
                         <div className="l"><img  src={JOGO.produtora} alt="logo criadora do jogo" /></div>
-                        <div className="p">{JOGO.plataformaPC && <img src={JOGO.plataformaPC} alt="plataforma PC" />}{JOGO.plataformaPL && <img src={JOGO.plataformaPL} alt="plataforma Play" />}
+                        <div className="p">{JOGO.plataformaPC && <img src={JOGO.plataformaPC} alt="plataforma PC" />}{JOGO.plataformaPL && <img src={JOGO.plataformaPL} alt="plataforma Play" />}{JOGO.plataformaXB && <img src={JOGO.plataformaXB} alt="plataforma XBOX"/>}
                         </div>
                 </div>
 

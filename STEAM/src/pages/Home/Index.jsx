@@ -106,7 +106,7 @@ function Home (){
                         <img src={DarkII} alt="" />
                         <div className='infn'>
                             <p>Dark souls II</p>
-                            <button onClick={()=> nav("/Detalhes")}>Ver mais</button>
+                            <button onClick={()=> nav("/Detalhes/Darksouls2")}>Ver mais</button>
                         </div>
                     </div>
 
