@@ -1,5 +1,5 @@
 import './Home.css'
-import { useState, useRef } from 'react'
+import { useState, useRef, } from 'react'
 import Logo from "../../assets/logol1.png"
 import The from "../../assets/thelast.mp4"
 import Dog from "../../assets/Naughtydog.png"
@@ -10,7 +10,7 @@ import Hollow from "../../assets/hollow.mp4"
 import Thef from "../../assets/thelastf.jpg"
 import Blood from "../../assets/bloodborne.jpg"
 import DarkII from "../../assets/darksoulsII.jpg"
-
+import { useNavigate } from 'react-router-dom'
 
 function Home (){
     let [pos,setpos]=useState(0)
@@ -34,7 +34,7 @@ function Home (){
         }
     }
 
-
+    const nav =useNavigate()
 
 
 
@@ -90,7 +90,7 @@ function Home (){
                         <img src={Thef} alt="" />
                         <div className='infn'>
                             <p>The last of us II</p>
-                            <button>Ver mais</button>
+                            <button onClick={()=> nav("/Detalhes/the_last_of_us_II")}>Ver mais</button>
                         </div>
                     </div>
 
@@ -98,7 +98,7 @@ function Home (){
                         <img src={Blood} alt="" />
                         <div className='infn'>
                             <p>Bloodborne</p>
-                            <button>Ver mais</button>
+                            <button onClick={()=> nav("/Detalhes/Bloodborne")}>Ver mais</button>
                         </div>
                     </div>
 
@@ -106,7 +106,7 @@ function Home (){
                         <img src={DarkII} alt="" />
                         <div className='infn'>
                             <p>Dark souls II</p>
-                            <button>Ver mais</button>
+                            <button onClick={()=> nav("/Detalhes")}>Ver mais</button>
                         </div>
                     </div>
 
