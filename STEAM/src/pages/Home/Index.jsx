@@ -1,7 +1,7 @@
 import './Home.css'
 import { useState, useRef, } from 'react'
 import Logo from "../../assets/logol1.png"
-import The from "../../assets/thelastz.mp4"
+import The from "../../assets/thelastof.mp4"
 import Dog from "../../assets/Naughtydog.png"
 import Cherry from "../../assets/cherry.png"
 import Silent from "../../assets/silenthill.mp4"
