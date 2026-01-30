@@ -1,0 +1,90 @@
+import Naughtdog from "../assets/Naughtydog.png"
+import Steam from "../assets/steam.png"
+import Play from "../assets/playstation.png"
+import Fromsoft from "../assets/fromsoftware.png"
+import Xbox from "../assets/Xbox.png"
+import Bendstudio from "../assets/bendstudio.png"
+
+
+
+const JOGOS = {
+        the_last_of_us_II : {
+            title: "The Last of Us Part II",
+            sinops: "Em um mundo devastado por uma pandemia que transformou a humanidade, Ellie embarca em uma jornada sombria e cheia de perigos em busca de justiça e redenção. Conforme enfrenta inimigos implacáveis e dilemas morais profundos, ela descobre que o verdadeiro desafio não está apenas na sobrevivência, mas nas escolhas que moldam seu destino. Prepare-se para uma experiência intensa, com narrativa emocionante, gráficos incríveis e uma imersão que vai mexer com suas emoções.",
+            media: "https://www.youtube.com/embed/W2Wnvvj33Wo?si=Er50KI-6NFJxNCte",
+            produtora: Naughtdog,
+            plataformaPC: false,
+            plataformaPL: Play,
+            plataformaXB: false,
+            trofeuPL: 1,
+            trofeuOR: 7,
+            trofeuPR: 9,
+            trofeuBR: 11,
+        },
+        Bloodborne : {
+            title: "Bloodborne",
+            sinops: "Em uma cidade antiga e sombria, envolta por uma névoa de mistério e terror, você assume o papel de um caçador imerso em uma luta desesperada contra horrores indescritíveis e uma maldição que consome a mente e o corpo. Conforme desbrava ruas assustadoras, enfrenta criaturas grotescas e desvenda segredos perturbadores, cada passo é um teste de coragem e sanidade. Prepare-se para uma experiência obscura e intensa, onde o medo, a estratégia e a determinação se entrelaçam em uma narrativa que desafia seus limites e mergulha você em um universo aterrorizante e fascinante.",
+            media: "https://www.youtube.com/embed/G203e1HhixY?si=henYRmuZgG1JQS2c",
+            produtora: Fromsoft,
+            plataformaPC: false,
+            plataformaPL: Play,
+            plataformaXB: false,
+            trofeuPL: 1,
+            trofeuOR: 6,
+            trofeuPR: 9,
+            trofeuBR: 18,
+        },
+        Darksouls2 : {
+            title: "Dark souls II",
+            sinops: "Em um reino amaldiçoado e em ruínas, você desperta marcado pela maldição dos mortos-vivos. Ao enfrentar inimigos cruéis e explorar terras esquecidas, cada batalha testa sua persistência e força de vontade. Uma jornada sombria e desafiadora, onde perder tudo é parte do caminho.",
+            media: "https://www.youtube.com/embed/4IzXvLXbfzg?si=_KNxeJMGYqPyzTfp",
+            produtora: Fromsoft,
+            plataformaPC: Steam,
+            plataformaPL: Play,
+            plataformaXB: Xbox,
+            trofeuPL: 1,
+            trofeuOR: 2,
+            trofeuPR: 8,
+            trofeuBR: 28,
+        },
+        Darksouls3 : {
+            title: "Dark souls III",
+            sinops: "Em um mundo à beira do colapso, você desperta como um guerreiro destinado a enfrentar deuses caídos e criaturas devastadoras. Entre cinzas, ruínas e batalhas brutais, cada confronto exige precisão, coragem e persistência em uma jornada sombria e implacável.",
+            media: "https://www.youtube.com/embed/cWBwFhUv1-8?si=zbGV25tZLOIEMg03",
+            produtora: Fromsoft,
+            plataformaPC: Steam,
+            plataformaPL: Play,
+            plataformaXB: Xbox,
+            trofeuPL: 1,
+            trofeuOR: 1,
+            trofeuPR: 8,
+            trofeuBR: 34,
+        },
+        Eldenring : {
+            title: "Elden ring",
+            sinops: "Em um vasto mundo aberto marcado pela ruína do Anel Prístino, você explora terras esquecidas, enfrenta inimigos colossais e descobre segredos antigos. Uma jornada épica que combina liberdade, desafio extremo e uma narrativa profunda em um universo sombrio e grandioso.",
+            media: "https://www.youtube.com/embed/E3Huy2cdih0?si=mrWVLL0WmqC9j7rb",
+            produtora: Fromsoft,
+            plataformaPC: Steam,
+            plataformaPL: Play,
+            plataformaXB: Xbox,
+            trofeuPL: 1,
+            trofeuOR: 1,
+            trofeuPR: 3,
+            trofeuBR: 38,
+        },
+        Daysgone : {
+            title: "Days gone",
+            sinops: "Em um mundo pós-apocalíptico dominado por criaturas selvagens, você assume o papel de um sobrevivente em busca de sentido em meio ao caos. Explorando estradas perigosas e enfrentando ameaças constantes, cada decisão pode significar vida ou morte.",
+            media: "https://www.youtube.com/embed/FKtaOY9lMvM?si=9WPXz6H6XAH_Aulo",
+            produtora: Bendstudio,
+            plataformaPC: Steam,
+            plataformaPL: Play,
+            plataformaXB: false,
+            trofeuPL: 1,
+            trofeuOR: 2,
+            trofeuPR: 17,
+            trofeuBR: 29,
+        }
+    };
+    export default JOGOS;

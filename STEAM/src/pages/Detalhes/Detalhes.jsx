@@ -1,42 +1,21 @@
 import { useParams } from "react-router-dom";
 import "./Detalhes.css"
-import Naughtdog from "../../assets/Naughtydog.png"
-import Steam from "../../assets/steam.png"
-import Play from "../../assets/playstation.png"
-import Fromsoft from "../../assets/fromsoftware.png"
-import Xbox from "../../assets/Xbox.png"
+import { useRef } from "react";
+import Platina from "../../assets/platinna.png"
+import Ouro from "../../assets/ouro1.png"
+import Prata from "../../assets/prata1.png"
+import Bronze from "../../assets/bronze1.png"
+import JOGOS from "../../objetos/Jogos"
 
 function Detalhes () {
     const {slug}= useParams()
-    const JOGOS = {
-        the_last_of_us_II : {
-            title: "The Last of Us Part II",
-            sinops: "Em um mundo devastado por uma pandemia que transformou a humanidade, Ellie embarca em uma jornada sombria e cheia de perigos em busca de justiça e redenção. Conforme enfrenta inimigos implacáveis e dilemas morais profundos, ela descobre que o verdadeiro desafio não está apenas na sobrevivência, mas nas escolhas que moldam seu destino. Prepare-se para uma experiência intensa, com narrativa emocionante, gráficos incríveis e uma imersão que vai mexer com suas emoções.",
-            media: "https://www.youtube.com/embed/W2Wnvvj33Wo?si=Er50KI-6NFJxNCte",
-            produtora: Naughtdog,
-            plataformaPC: Steam,
-            plataformaPL: Play,
-            plataformaXB: false,
-        },
-        Bloodborne : {
-            title: "Bloodborne",
-            sinops: "Em uma cidade antiga e sombria, envolta por uma névoa de mistério e terror, você assume o papel de um caçador imerso em uma luta desesperada contra horrores indescritíveis e uma maldição que consome a mente e o corpo. Conforme desbrava ruas assustadoras, enfrenta criaturas grotescas e desvenda segredos perturbadores, cada passo é um teste de coragem e sanidade. Prepare-se para uma experiência obscura e intensa, onde o medo, a estratégia e a determinação se entrelaçam em uma narrativa que desafia seus limites e mergulha você em um universo aterrorizante e fascinante.",
-            media: "https://www.youtube.com/embed/G203e1HhixY?si=henYRmuZgG1JQS2c",
-            produtora: Fromsoft,
-            plataformaPC: false,
-            plataformaPL: Play,
-            plataformaXB: false,
-        },
-        Darksouls2 : {
-            title: "Dark souls II",
-            sinops: "Em um reino amaldiçoado e em ruínas, você desperta marcado pela maldição dos mortos-vivos. Ao enfrentar inimigos cruéis e explorar terras esquecidas, cada batalha testa sua persistência e força de vontade. Uma jornada sombria e desafiadora, onde perder tudo é parte do caminho.",
-            media: "https://www.youtube.com/embed/4IzXvLXbfzg?si=_KNxeJMGYqPyzTfp",
-            produtora: Fromsoft,
-            plataformaPC: Steam,
-            plataformaPL: Play,
-            plataformaXB: Xbox,
-        }
-    };
+    const pop=useRef(null)
+    function chamar () {
+        pop.current.style.left="50%";
+    }
+    function volt () {
+        pop.current.style.left='200%';
+    }
 
     const JOGO=JOGOS[slug]
 
@@ -52,8 +31,15 @@ function Detalhes () {
                 </div>
                 <div className="jginf">
                         <div className="l"><img  src={JOGO.produtora} alt="logo criadora do jogo" /></div>
-                        <div className="p">{JOGO.plataformaPC && <img src={JOGO.plataformaPC} alt="plataforma PC" />}{JOGO.plataformaPL && <img src={JOGO.plataformaPL} alt="plataforma Play" />}{JOGO.plataformaXB && <img src={JOGO.plataformaXB} alt="plataforma XBOX"/>}
+                        <div className="p"><h1 className="ver" onClick={chamar}>ver mais</h1><h1 className="vmb" onClick={chamar}>ver mais</h1>{JOGO.plataformaPC && <img src={JOGO.plataformaPC} alt="plataforma PC" />}{JOGO.plataformaPL && <img src={JOGO.plataformaPL} alt="plataforma Play" />}{JOGO.plataformaXB && <img src={JOGO.plataformaXB} alt="plataforma XBOX"/>}
                         </div>
+                </div>
+                <div className="popt" ref={pop}>
+                    <div className="barx" onClick={volt}><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 16 16"><path fill="#ffffff" d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94z"/></svg></div>
+                    <div className="tf"><img src={Platina} alt="trofeu de platina" /><h1>{JOGO.trofeuPL}</h1></div>
+                    <div className="tf"><img src={Ouro} alt="trofeu de Ouro" /><h1>{JOGO.trofeuOR}</h1></div>
+                    <div className="tf"><img src={Prata} alt="trofeu de Prata" /><h1>{JOGO.trofeuPR}</h1></div>
+                    <div className="tf"><img src={Bronze} alt="trofeu de Bronze" /><h1>{JOGO.trofeuBR}</h1></div>
                 </div>
 
 

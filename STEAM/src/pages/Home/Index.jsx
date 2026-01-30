@@ -1,15 +1,18 @@
 import './Home.css'
 import { useState, useRef, } from 'react'
 import Logo from "../../assets/logol1.png"
-import The from "../../assets/thelast.mp4"
+import The from "../../assets/thelastz.mp4"
 import Dog from "../../assets/Naughtydog.png"
 import Cherry from "../../assets/cherry.png"
 import Silent from "../../assets/silenthill.mp4"
 import Konami from "../../assets/konami.png"
 import Hollow from "../../assets/hollow.mp4"
-import Thef from "../../assets/thelastf.jpg"
+import Thef from "../../assets/thelast.jpg"
 import Blood from "../../assets/bloodborne.jpg"
 import DarkII from "../../assets/darksoulsII.jpg"
+import DarkIII from "../../assets/darksouls3.jpg"
+import ElderR from "../../assets/eldenring.jpg"
+import Daysgone from "../../assets/daysgone.jpg"
 import { useNavigate } from 'react-router-dom'
 
 function Home (){
@@ -109,8 +112,32 @@ function Home (){
                             <button onClick={()=> nav("/Detalhes/Darksouls2")}>Ver mais</button>
                         </div>
                     </div>
+                </div>
 
+                <div className='conteineri'>
+                    <div className='in'>
+                        <img src={DarkIII} alt="" />
+                        <div className='infn'>
+                            <p>Dark souls III</p>
+                            <button onClick={()=> nav("/Detalhes/Darksouls3")}>Ver mais</button>
+                        </div>
+                    </div>
 
+                    <div className='in'>
+                        <img src={ElderR} alt="" />
+                        <div className='infn'>
+                            <p>Elden ring</p>
+                            <button onClick={()=> nav("/Detalhes/Eldenring")}>Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div className='in'>
+                        <img src={Daysgone} alt="" />
+                        <div className='infn'>
+                            <p>Days gone</p>
+                            <button onClick={()=> nav("/Detalhes/Daysgone")}>Ver mais</button>
+                        </div>
+                    </div>
                 </div>
         </div>
     )

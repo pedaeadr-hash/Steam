@@ -2,6 +2,11 @@
   box-sizing: border-box;
   font-family: "Orbitron", sans-serif;
   letter-spacing: 2px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
