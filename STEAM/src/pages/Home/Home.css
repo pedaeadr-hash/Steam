@@ -20,7 +20,7 @@ header {
 }
 
 header img {
-    height: 70%;
+    height: 90%;
 }
 
 .box {
@@ -47,7 +47,7 @@ header img {
     justify-content: center;
     position: absolute;
     bottom: 0px;
-    gap: 10vw;
+    gap: 15px;
     width: 100%;
     height: 10%;
     background-color: rgba(43, 43, 43, 0.048);
@@ -74,14 +74,14 @@ header img {
 
 .boll {
     transition: all 0.5s ease-in-out;
-    width: 5%;
+    width: 2%;
     height: 15%;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
 }
 
 .active {
-    width: 10%;
+    width: 6%;
     height: 20%;
 }
 
@@ -238,11 +238,11 @@ header img {
     }
 
     .boll {
-        width: 20%;
+        width: 5%;
     }
 
     .active {
-        width: 40%;
+        width: 10%;
     }
 
     .conteineri {
@@ -253,6 +253,14 @@ header img {
 
     .infn button {
         font-size: 10px;
+    }
+
+    .in {
+        width: 75%;
+    }
+
+    .content {
+        height: 82vh;
     }
 }
 

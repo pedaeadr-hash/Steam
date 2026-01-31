@@ -42,9 +42,25 @@ function Detalhes () {
                     <div className="tf"><img src={Bronze} alt="trofeu de Bronze" /><h1>{JOGO.trofeuBR}</h1></div>
                 </div>
 
+            </div>
 
 
 
+
+            <div className="mb">
+                <iframe src={JOGO.media} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <h1 className="mbt">{JOGO.title}</h1>
+                <p className="mbs">{JOGO.sinops}</p>
+
+                <div className="mbp"><img  src={JOGO.produtora} alt="logo criadora do jogo" /></div>
+                <div className="mbpp">{JOGO.plataformaPC && <img src={JOGO.plataformaPC} alt="plataforma pc"/>}{JOGO.plataformaPL && <img src={JOGO.plataformaPL} alt="plataforma pl"/>}{JOGO.plataformaXB && <img src={JOGO.plataformaXB} alt="plataforma XBOX"/>}</div>
+
+
+                <div className="mbc">
+                    <div className="mm"><img src={Platina} alt="trofeu platina" /><h1>{JOGO.trofeuPL}</h1><img src={Ouro} alt="trofeu ouro" /><h1>{JOGO.trofeuOR}</h1></div>
+                    <div className="mm"><img src={Prata} alt="trofeu de prata" /><h1>{JOGO.trofeuPR}</h1><img src={Bronze} alt="trofeu de prata" /><h1>{JOGO.trofeuBR}</h1></div>
+                </div>
 
 
 
@@ -67,6 +83,16 @@ function Detalhes () {
 
 
             </div>
+
+
+
+
+
+
+
+
+
+
         </div>
     );
 }

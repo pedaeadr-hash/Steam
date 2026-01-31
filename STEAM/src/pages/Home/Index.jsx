@@ -1,6 +1,6 @@
 import './Home.css'
 import { useState, useRef, } from 'react'
-import Logo from "../../assets/logol1.png"
+import Logo from "../../assets/logo1.png"
 import The from "../../assets/thelastw.mp4"
 import Dog from "../../assets/Naughtydog.png"
 import Cherry from "../../assets/cherry.png"
@@ -13,6 +13,7 @@ import DarkII from "../../assets/darksoulsII.jpg"
 import DarkIII from "../../assets/darksouls3.jpg"
 import ElderR from "../../assets/eldenring.jpg"
 import Daysgone from "../../assets/daysgone.jpg"
+import CD from "../../assets/cyberpunk.png"
 import { useNavigate } from 'react-router-dom'
 
 function Home (){
@@ -55,7 +56,7 @@ function Home (){
                 <div className='content'>
                     <div className='btn'>
                         <div className='left' onClick={Prev}><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="#ffffff" fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd"/></svg></div>
-                        <div className='bolls'><div className="bolls"> {[-1, 0, 1].map((index) => ( <div key={index} className={pos === index ? "boll active" : "boll"} /> ))} </div> </div>
+                         {[-1, 0, 1].map((index) => ( <div key={index} className={pos === index ? "boll active" : "boll"} /> ))} 
                         <div className='right' onClick={Next}><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg></div>
                     </div>
 
@@ -72,7 +73,7 @@ function Home (){
                             <video autoPlay muted loop playsInline src={The}></video>
                             <div className='info'>
                                 <p>Cyperpunk 2077</p>
-                                <img className='creat' src={Dog} alt="" />
+                                <img className='creat' src={CD} alt="" />
                             </div>
                         </div>
                         <div className='card'>
