@@ -14,6 +14,8 @@ import DarkIII from "../../assets/darksouls3.jpg"
 import ElderR from "../../assets/eldenring.jpg"
 import Daysgone from "../../assets/daysgone.jpg"
 import CD from "../../assets/cyberpunk.png"
+import Hollowk from "../../assets/Hollow.jpg"
+import Redd from "../../assets/red.jpg"
 import { useNavigate } from 'react-router-dom'
 
 function Home (){
@@ -129,6 +131,31 @@ function Home (){
                         <div className='infn'>
                             <p>Elden ring</p>
                             <button onClick={()=> nav("/Detalhes/Eldenring")}>Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div className='in'>
+                        <img src={Daysgone} alt="" />
+                        <div className='infn'>
+                            <p>Days gone</p>
+                            <button onClick={()=> nav("/Detalhes/Daysgone")}>Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div className='conteineri'>
+                    <div className='in'>
+                        <img src={Hollowk} alt="" />
+                        <div className='infn'>
+                            <p>Hollow Knight</p>
+                            <button onClick={()=> nav("/Detalhes/HollowKnight")}>Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div className='in'>
+                        <img src={Redd} alt="" />
+                        <div className='infn'>
+                            <p>Red dead</p>
+                            <button onClick={()=> nav("/Detalhes/Reddeadredemption")}>Ver mais</button>
                         </div>
                     </div>
 

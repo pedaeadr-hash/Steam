@@ -4,6 +4,8 @@ import Play from "../assets/playstation.png"
 import Fromsoft from "../assets/fromsoftware.png"
 import Xbox from "../assets/Xbox.png"
 import Bendstudio from "../assets/bendstudio.png"
+import Cherry from "../assets/Cherry.png"
+import Rockstar from "../assets/Rockstar.png"
 
 
 
@@ -85,6 +87,32 @@ const JOGOS = {
             trofeuOR: 2,
             trofeuPR: 17,
             trofeuBR: 29,
-        }
+        },
+        HollowKnight : {
+            title: "Hollow Knight",
+            sinops: "Hollow Knight é um jogo de ação e aventura em 2D que se passa em Hallownest, um antigo reino subterrâneo agora em ruínas. Você controla um pequeno cavaleiro silencioso que explora esse mundo sombrio, enfrentando criaturas corrompidas e chefes desafiadores enquanto descobre, aos poucos, o que aconteceu com o reino e qual é o seu papel nisso.",
+            media: "https://www.youtube.com/embed/JuP47fRBsWg?si=8eIA_gJwGGPzTfpt",
+            produtora: Cherry,
+            plataformaPC: Steam,
+            plataformaPL: Play,
+            plataformaXB: Xbox,
+            trofeuPL: 1,
+            trofeuOR: 4,
+            trofeuPR: 11,
+            trofeuBR: 47,
+        },
+        Reddeadredemption : {
+            title: "Red dead redemption",
+            sinops: "Red Dead Redemption 2 se passa em 1899 e acompanha Arthur Morgan, um fora-da-lei que vive fugindo da lei com sua gangue enquanto o Velho Oeste chega ao fim. O jogo foca em escolhas, lealdade e nas consequências da vida fora da lei.",
+            media: "https://www.youtube.com/embed/gmA6MrX81z4?si=SOcziqPhVfybu3QD",
+            produtora: Rockstar,
+            plataformaPC: Steam,
+            plataformaPL: Play,
+            plataformaXB: Xbox,
+            trofeuPL: 1,
+            trofeuOR: 2,
+            trofeuPR: 8,
+            trofeuBR: 41,
+        },
     };
     export default JOGOS;
