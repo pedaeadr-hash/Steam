@@ -63,7 +63,7 @@ function Home (){
                     <div className='viwe' style={{ transform: `translateX(${-pos * 96}%)` }}>
                         <div className='card'>
                             <video autoPlay muted loop playsInline src={Silent}></video>
-                            <div className='info'>
+                            <div className='infu'>
                                 <p>Silent hill</p>
                                 <img className='creat' src={Konami} alt="" />
                             </div>
@@ -71,14 +71,14 @@ function Home (){
                         
                         <div className='card'>
                             <video autoPlay muted loop playsInline src={The}></video>
-                            <div className='info'>
+                            <div className='infu'>
                                 <p>Cyperpunk 2077</p>
                                 <img className='creat' src={CD} alt="" />
                             </div>
                         </div>
                         <div className='card'>
                             <video autoPlay muted loop playsInline src={Hollow}></video>
-                            <div className='info'>
+                            <div className='infu'>
                                 <p>Hollow Knight</p>
                                 <img className='creat' src={Cherry} alt="" />
                             </div>
