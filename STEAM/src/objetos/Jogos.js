@@ -114,5 +114,18 @@ const JOGOS = {
             trofeuPR: 8,
             trofeuBR: 41,
         },
+        Gta5 : {
+            title: "Gta V",
+            sinops: "O jogo acompanha três criminosos — Michael, Franklin e Trevor — vivendo em Los Santos, uma cidade cheia de corrupção, crimes e oportunidades. As histórias deles se cruzam em assaltos gigantes, conflitos pessoais e muita treta com o governo e o submundo do crime.",
+            media: "https://www.youtube.com/embed/QkkoHAzjnUs?si=WfOvWlBNp_dKpZ3A",
+            produtora: Rockstar,
+            plataformaPC: Steam,
+            plataformaPL: Play,
+            plataformaXB: Xbox,
+            trofeuPL: 1,
+            trofeuOR: 3,
+            trofeuPR: 17,
+            trofeuBR: 57,
+        },
     };
     export default JOGOS;

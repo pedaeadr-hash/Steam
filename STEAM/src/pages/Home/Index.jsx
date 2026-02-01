@@ -16,6 +16,7 @@ import Daysgone from "../../assets/daysgone.jpg"
 import CD from "../../assets/cyberpunk.png"
 import Hollowk from "../../assets/Hollow.jpg"
 import Redd from "../../assets/red.jpg"
+import GTA from "../../assets/GTA.jpg"
 import { useNavigate } from 'react-router-dom'
 
 function Home (){
@@ -62,7 +63,7 @@ function Home (){
                         <div className='right' onClick={Next}><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg></div>
                     </div>
 
-                    <div className='viwe' style={{ transform: `translateX(${-pos * 96}%)` }}>
+                    <div className='viwe' style={{ transform: `translateX(${-pos * 97}%)` }}>
                         <div className='card'>
                             <video autoPlay muted loop playsInline src={Silent}></video>
                             <div className='infu'>
@@ -160,10 +161,10 @@ function Home (){
                     </div>
 
                     <div className='in'>
-                        <img src={Daysgone} alt="" />
+                        <img src={GTA} alt="" />
                         <div className='infn'>
-                            <p>Days gone</p>
-                            <button onClick={()=> nav("/Detalhes/Daysgone")}>Ver mais</button>
+                            <p>Gta V</p>
+                            <button onClick={()=> nav("/Detalhes/Gta5")}>Ver mais</button>
                         </div>
                     </div>
                 </div>

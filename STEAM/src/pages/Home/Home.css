@@ -36,7 +36,7 @@ header img {
     display: flex;
     align-items: start;
     justify-content: center;
-    width: 100%;
+    width: 99%;
     height: 80vh;
     background-color: rgba(32, 32, 32, 0);
 }
@@ -128,7 +128,7 @@ header img {
     align-items: start;
     justify-content: center;
     flex-shrink: 0;
-    width: 95%;
+    width: 96%;
     height: 99%;
     background-color: rgb(34, 34, 34);
 }
@@ -261,7 +261,7 @@ header img {
     }
 
     .content {
-        height: 82vh;
+        height: 86vh;
     }
 }
 
